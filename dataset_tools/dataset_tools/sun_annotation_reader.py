@@ -4,7 +4,7 @@ import os
 import numpy
 
 
-class GroundTruth(object) :
+class SunGroundTruth(object) :
     x = 0
     y = 0
     zmin = 0
@@ -17,7 +17,7 @@ class GroundTruth(object) :
     pass
 
 
-class AnnotationReader :
+class SunAnnotationReader :
     # def get3DAnnotationLayout(self):
     #     annotation_file = os.path.join(self.dataset_path, 'annotation3Dlayout', 'index.json')
     #     annotation3D, labels3D = self.read3DAnnotationFile(annotation_file)
@@ -75,7 +75,7 @@ class AnnotationReader :
             return False
 
     def read_bounding_box( self, annotation_data, i ) :
-        gt_box = GroundTruth()
+        gt_box = SunGroundTruth()
         gt_box.x = self.get_annotated_data(annotation_data, "X", i)
         gt_box.y = self.get_annotated_data(annotation_data, "Z", i)
         vector1 = [ gt_box.x[ 1 ] - gt_box.x[ 0 ], gt_box.y[ 1 ] - gt_box.y[ 0 ], 0 ]
