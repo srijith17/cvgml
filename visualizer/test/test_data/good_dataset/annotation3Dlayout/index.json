@@ -1,0 +1,1 @@
+{"date":"Sat, 29 Nov 2014 22:13:54 GMT","name":"b3do/good_dataset","frames":[{}],"objects":[{"name":"room","polygon":[{"Ymin":-3.63,"Ymax":1.2,"rectangle":false,"X":[-6.01,-6.05,1.98855224609375,0.01,-5.97],"Z":[2.36,7.22,0.66,-0.06,2.34]}]}],"extrinsics":"20140915210311.txt","conflictList":[null],"fileList":["good_dataset.jpg"]}

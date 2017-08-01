@@ -5,10 +5,12 @@ import numpy
 import pyqtgraph.opengl as gl
 from pyqtgraph.Qt import QtCore, QtGui
 
-from SUNDatasetReader import SunDatasetReader
+from sun_dataset_reader import SunDatasetReader
 
 datasetReader = SunDatasetReader()
-test_data_path = os.path.join(os.getcwd(), 'test', 'test_data', 'good_dataset')
+test_data_path = os.path.join(os.getcwd(), '..','..', 'dataset_tools','test','test_data',
+                              'good_dataset')
+print(test_data_path)
 datasetReader.read(test_data_path)
 vertices = datasetReader.get_point_cloud()
 

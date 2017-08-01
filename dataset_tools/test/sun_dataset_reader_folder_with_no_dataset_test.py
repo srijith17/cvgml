@@ -1,40 +1,42 @@
 import os
 import unittest
 
-from SUNDatasetReader import SunDatasetReader
-
+from sun_dataset_reader import SunDatasetReader
 
 class SUNDatasetReaderFolderWithNoDatasetTest(unittest.TestCase) :
     datasetReader = SunDatasetReader()
 
     def setUp( self ) :
         """ Set up for the test """
-        test_data_path = os.path.join(os.getcwd(), 'test', 'test_data', 'folder_exists_not_dataset')
+        test_data_path = os.path.join(os.getcwd(), 'test_data', 'folder_exists_not_dataset')
         self.datasetReader.read(test_data_path)
 
     def tearDown( self ) :
         """ Tear Down for the test """
 
-    def test_retrieveRGBImage( self ) :
+    def test_retrieve_rgb_Image( self ) :
         try :
             self.fail('Did not throw expected execption')
         except :
             pass
 
-    def test_retrieveFullResRGBImage( self ) :
+    def test_retrieve_full_res_rgb_image( self ) :
         try :
             self.fail('Did not throw expected execption')
         except :
             pass
 
-    def test_retrieveDepthImage( self ) :
+    def test_retrieve_depth_image( self ) :
         try :
             self.fail('Did not throw expected execption')
         except :
             pass
 
-    def test_retrieveFullResDepthImage( self ) :
+    def test_retrieve_full_res_depth_image( self ) :
         try :
             self.fail('Did not throw expected execption')
         except :
             pass
+
+if __name__ == '__main__':
+    unittest.main()

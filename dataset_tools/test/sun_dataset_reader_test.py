@@ -75,22 +75,22 @@ class SUNDatasetReaderTest(unittest.TestCase) :
     #     print(annotation3D)
     #     print(labels3D)
 
-        # def test_retrieve3DAnnotationsLayout(self):
-        #     annotation3DLayout, labels3DLayout = self.datasetReader.get3DAnnotationLayout()
-        #     print(annotation3DLayout)
-        #     print(labels3DLayout)
+    # def test_retrieve3DAnnotationsLayout(self):
+    #     annotation3DLayout, labels3DLayout = self.datasetReader.get3DAnnotationLayout()
+    #     print(annotation3DLayout)
+    #     print(labels3DLayout)
 
-        # def test_retrieveAnnotation3DFinal(self):
-        #     depth_image = self.datasetReader.getDepthDenoisedImage()
-        #     self.assertEquals(depth_image.shape, (427, 561, 3))
-        #
-        # def test_retrieveAnnotation3DLayout(self):
-        #     depth_image = self.datasetReader.getDepthDenoisedImage()
-        #     self.assertEquals(depth_image.shape, (427, 561, 3))
-        #
-        # def test_retrieveScene(self):
-        #     depth_image = self.datasetReader.getDepthDenoisedImage()
-        #     self.assertEquals(depth_image.shape, (427, 561, 3))
+    # def test_retrieveAnnotation3DFinal(self):
+    #     depth_image = self.datasetReader.getDepthDenoisedImage()
+    #     self.assertEquals(depth_image.shape, (427, 561, 3))
+    #
+    # def test_retrieveAnnotation3DLayout(self):
+    #     depth_image = self.datasetReader.getDepthDenoisedImage()
+    #     self.assertEquals(depth_image.shape, (427, 561, 3))
+    #
+    # def test_retrieveScene(self):
+    #     depth_image = self.datasetReader.getDepthDenoisedImage()
+    #     self.assertEquals(depth_image.shape, (427, 561, 3))
 
 if __name__ == '__main__':
     unittest.main()
